@@ -1,1 +1,2 @@
 # BabyKnight.github.io
+*.swp
