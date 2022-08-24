@@ -1,77 +1,598 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Vincent Hu &mdash; Developer and Technophile</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Simple web page of my profile" />
+	<meta name="keywords" content="profile, resume, work experience, Education, Project, html5, css3, mobile first, responsive" />
+	<meta name="author" content="Vincent Hu" />
 
-  <head>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Vincent Hu's Website Homepage">
-    <meta name="author" content="Vincent Hu">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+  	<link rel="stylesheet" href="css/bootstrap.css">
+  	<link rel="stylesheet" href="css/vct-icon.css">
 
-    <title>Vincent Hu</title>
 
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/v-site.css">
-    </head>
-    
-    <body>
-    <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">
-                            Vincent Hu
-                        </a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                            <li class="scroll-to-section"><a href="#about">About</a></li>
-                            <li class="scroll-to-section"><a href="#projects">Work Experience</a></li>
-                            <li class="submenu">
-                                <a href="javascript:;">Projects</a>
-                                <ul>
-                                    <li><a href="">Description</a></li>
-                                    <li><a href="">Features</a></li>
-                                    <li><a href="">FAQ's</a></li>
-                                    <li><a href="">Blog</a></li>
-                                </ul>
-                            </li>
-                            <li class="scroll-to-section"><a href="#contact-us">Contact Me</a></li> 
-                        </ul>
-                        <!-- ***** Menu End ***** -->
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- ***** Header Area End ***** -->
-    
-    <!-- ***** Main Banner Area Start ***** -->
-    <div class="main-banner header-text" id="top">
-        <div class="Modern-Slider">
-          <!-- Item -->
-          <div class="item">
-            <div class="img-fill">
-                <img src="images/background.jpg" alt="">
-                <div class="text-content">
-                  <h3>Welcome</h3>
-                  <h5>Coming Soon ...</h5>
-                  <a href="#" class="main-stroked-button">Learn More</a>
-                  <a href="#" class="main-filled-button">Send Me Message Now</a>
-                </div>
-            </div>
-          </div>
-          <!-- // Item -->
-        </div>
-    </div>
-    
+  	<style type="text/css">
 
-  </body>
+
+  	
+  	html, body {
+  		font-family: "Space Mono", Arial, serif;
+  		font-weight: 400;
+  		font-size: 16px;
+  		line-height: 1.7;
+  		height: 100%;
+    	width: 100%;
+	}
+
+	a:hover a:focus {
+		text-decoration: none;
+	}
+
+	.profile-page {
+		height: 100%;
+		width: 100%;
+		margin-top: 0;
+		margin-left: 0;
+		position: relative;
+  		overflow-x: hidden;
+  		-webkit-transition: 0.5s;
+  		-o-transition: 0.5s;
+  		transition: 0.5s;
+  		background: #ffffff;
+	}
+
+	.header {
+		height: 100%;
+		width: 100%;
+		background: #685ba0;
+
+		min-height: 100vh;
+  		display: -webkit-box;
+  		display: -webkit-flex;
+  		display: -moz-box;
+  		display: -ms-flexbox;
+  		display: flex;
+  		flex-wrap: wrap;
+  		justify-content: center;
+  		align-items: center;
+  		padding: 15px;
+  		background: #0250c5;
+  		background: -webkit-linear-gradient(bottom, #0250c5, #d43f8d);
+  		background: -o-linear-gradient(bottom, #0250c5, #d43f8d);
+  		background: -moz-linear-gradient(bottom, #0250c5, #d43f8d);
+  		background: linear-gradient(bottom, #0250c5, #d43f8d);
+  		position: relative;
+  		z-index: 1;
+	}
+
+	.container {
+		top: 10%;
+	}
+
+	.profile-header .profile-thumb {
+		background-size: cover !important;
+  		background-position: center center;
+  		background-repeat: no-repeat;
+  		position: relative;
+  		height: 200px;
+  		width: 200px;
+  		margin: 0 auto;
+  		margin-bottom: 30px;
+  		-webkit-border-radius: 50%;
+  		-moz-border-radius: 50%;
+  		-ms-border-radius: 50%;
+  		border-radius: 50%;
+	}
+
+	.profile-header {
+		vertical-align: center;
+	}
+
+	.profile-header h1 {
+  		font-family: "Kaushan Script", cursive;
+  		margin-bottom: 30px;
+  		font-size: 50px;
+  		line-height: 1.3;
+  		font-weight: 300;
+  		-webkit-transform: rotate(-5deg);
+  		-moz-transform: rotate(-5deg);
+  		-ms-transform: rotate(-5deg);
+  		-o-transform: rotate(-5deg);
+  		transform: rotate(-5deg);
+  		color: #ffffff;
+	}
+
+	.profile-header h4 {
+  		color: #808A87;
+  		font-family: "Space Mono", Arial, serif;
+  		font-weight: 400;
+  		margin: 0 0 20px 0;
+
+	}
+
+	.profile-social-icons {
+		margin: 0;
+		padding: 0;
+	}
+
+	.profile-social-icons li {
+		margin: 0;
+  		padding: 0;
+  		list-style: none;
+  		display: -moz-inline-stack;
+  		display: inline-block;
+  		zoom: 1;
+  		*display: inline;
+	}
+
+	.profile-social-icons li a{
+		color: #fff;
+		 display: -moz-inline-stack;
+  		display: inline-block;
+  		zoom: 1;
+  		*display: inline;
+  		color: #FF9000;
+  		padding-left: 10px;
+  		padding-right: 10px;
+  		/* icon color */
+  		color: #ffffff;
+	}
+
+	.profile-social-icons li a i{
+		font-size: 25px;
+	}
+
+	.profile-social-icons li a:hover{
+		color: #cfb1d7;
+		/* remove the underline when hover */
+		text-decoration: none;
+	}
+
+	.about-me {
+		height: 0;
+		width: 100%;
+		background: #ffffff;
+	}
+
+	.resume {
+		/*height: 100%;*/
+		width: 100%;
+		background: #ffffff;
+	}
+
+
+
+.timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.timeline:before {
+  top: 20px;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 2px;
+  background-color: #e6e6e6;
+  left: 50%;
+  margin-left: 0px;
+}
+@media screen and (max-width: 768px) {
+  .timeline:before {
+    margin-left: -64px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .timeline:before {
+    margin-left: -64px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .timeline .timeline-heading {
+    margin-bottom: 30px;
+  }
+}
+.timeline .timeline-heading > div h3 {
+  display: inline-block;
+  padding: 7px 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  background: #e6e6e6;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+@media screen and (max-width: 768px) {
+  .timeline .timeline-heading > div h3 {
+    float: left;
+    margin-bottom: 0;
+  }
+}
+.timeline > li {
+  margin-bottom: 20px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .timeline > li {
+    margin-bottom: 4em;
+  }
+}
+.timeline > li:before, .timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li > .timeline-panel {
+  width: 45%;
+  float: left;
+  margin-bottom: 0;
+  position: relative;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline > li > .timeline-panel {
+    width: 85% !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .timeline > li > .timeline-panel {
+    width: 75% !important;
+  }
+  .timeline > li > .timeline-panel:before {
+    top: 30px;
+  }
+  .timeline > li > .timeline-panel:after {
+    top: 31px;
+  }
+}
+.timeline > li > .timeline-badge {
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  line-height: 50px;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  margin-left: -21px;
+  background-color: #cfb1d7;
+  z-index: 100;
+  display: table;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+@media screen and (max-width: 768px) {
+  .timeline > li > .timeline-badge {
+    margin-left: -10px !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .timeline > li > .timeline-badge {
+    margin-left: -10px !important;
+  }
+}
+.timeline > li > .timeline-badge i {
+  display: table-cell;
+  vertical-align: middle;
+  height: 44px;
+  font-size: 18px;
+}
+.timeline > li.timeline-unverted {
+  text-align: right;
+}
+@media screen and (max-width: 768px) {
+  .timeline > li.timeline-unverted {
+    text-align: left;
+  }
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+}
+
+.timeline > li.timeline-iverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+
+.timeline-title {
+  margin-top: 0;
+}
+
+.company {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #bfbfbf;
+}
+
+.timeline-body > p,
+.timeline-body > ul {
+  margin-bottom: 0;
+}
+
+.timeline-body > p + p {
+  margin-top: 5px;
+}
+
+@media (max-width: 992px) {
+  ul.timeline:before {
+    left: 90px;
+  }
+
+  ul.timeline > li > .timeline-panel {
+    width: calc(100% - 200px);
+    width: -moz-calc(100% - 200px);
+    width: -webkit-calc(100% - 200px);
+  }
+
+  ul.timeline > li > .timeline-badge {
+    left: 15px;
+    margin-left: 0;
+    top: 16px;
+  }
+
+  ul.timeline > li > .timeline-panel {
+    float: right;
+  }
+
+  ul.timeline > li > .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+
+  ul.timeline > li > .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+  }
+}
+
+.timeline h3{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	letter-spacing: 0.2em;
+	line-height: 2;
+  font-weight: 300;
+}
+
+.timeline span{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	letter-spacing: 0.1em;
+	line-height: 2;
+  	font-weight: 300;
+}
+
+.timeline-body p {
+	letter-spacing: 0.2em;
+	line-height: 2;
+  font-weight: 300;
+}
+
+	.features {
+		height: 0%;
+		width: 100%;
+		background: #eeeeee;
+	}
+
+	.skills {
+		height: 0%;
+		width: 100%;
+		background: #dddddd;
+	}
+
+	.footer {
+		height: 12%;
+		width: 100%;
+		vertical-align: center;
+		border-top: 2px solid #ddd
+	}
+
+	.footer > .container >.row {
+		margin-top: 1.5%;
+	}
+
+	.footer p {
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		color: #bfbfbf;
+		text-align: left;
+		margin-top: 0;
+		margin-bottom: 0;
+		font-size: 14px;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		line-height: 2;
+		font-weight: 300;
+		text-rendering: optimizeLegibility;
+	}
+  	</style>
+
+
+	</head>
+	<body>
+		
+	<!-- <div class="page-loader"></div> -->
+	<div class="profile-page">
+		<div class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<div class="profile-header">
+							<div class="profile-thumb" style="background: url(images/profile-thumb.jpg);"></div>
+							<h1><span>-  Vincent Hu  -</span></h1>
+							<h4><span>Developer / Technophile</span></h4>
+							<p>
+								<ul class="profile-social-icons">
+									<li><a href="#"><i class="icon-github"></i></a></li>
+									<li><a href="#"><i class="icon-wechat"></i></a></li>
+									<li><a href="#"><i class="icon-qq"></i></a></li>
+									<li><a href="#"><i class="icon-sina-weibo"></i></a></li>
+									<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+									<li><a href="#"><i class="icon-twitter"></i></a></li>
+									<li><a href="#"><i class="icon-tiktok"></i></a></li>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="about-me">
+			
+		</div>
+
+		<div  class="resume">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 text-center">
+						<ul class="timeline">
+							<li class="timeline-heading text-center">
+								<div><h3>Work Experience</h3></div>
+							</li>
+
+							<li class="timeline-item timeline-unverted">
+								<div class="timeline-badge">
+									<i class="icon-suitcase"></i>
+								</div>
+								<div class="timeline-panel">	
+									<div class="timeline-title">
+										<h3 class="timeline-title">Senior Software Developer</h3>
+										<span class="company">Dell (China) Co.Ltd - 2019.1 - Current</span>
+									</div>
+									<div class="timeline-body">
+										<p>- Act as Development Manager to enable Linux OS/new hardware/new feature on Dell platforms</p>
+										<p>- Design and deveolp 'Dell Linux Assistant' application</p>
+									</div>
+								</div>
+							</li>
+
+
+							<li class="timeline-item timeline-inverted">
+								<div class="timeline-badge">
+									<i class="icon-suitcase"></i>
+								</div>
+								<div class="timeline-panel">	
+									<div class="timeline-title">
+										<h3 class="timeline-title">Software Developer</h3>
+										<span class="company">Mintel Group Ltd. - 2015.3 - 2019.1</span>
+									</div>
+									<div class="timeline-body">
+										<p>- Design and develop Mintel web products</p>
+										<p>- Diagnose and handle urgent service issues</p>
+									</div>
+								</div>
+							</li>
+
+							<li class="timeline-item timeline-unverted">
+								<div class="timeline-badge">
+									<i class="icon-suitcase"></i>
+								</div>
+								<div class="timeline-panel">	
+									<div class="timeline-title">
+										<h3 class="timeline-title">Software Developer Intern</h3>
+										<span class="company">Cisco System (China) - 2013.6 - 2015.1</span>
+									</div>
+									<div class="timeline-body">
+										<p>- Develop management tools for service</p>
+										<p>- Design and develop factory tool 'NLC calibration Tool for Cisco CMC' for production</p>
+									</div>
+								</div>
+							</li>
+							<br>
+
+							<li class="timeline-heading text-center">
+								<div><h3>Education</h3></div>
+							</li>
+
+							<li class="timeline-item timeline-inverted">
+								<div class="timeline-badge">
+									<i class="icon-graduation-cap"></i>
+								</div>
+								<div class="timeline-panel panel-right">	
+									<div class="timeline-title">
+										<h3 class="timeline-title">Master Degree</h3>
+										<span class="company">Zhejiang University - 2011.9 - 2015.3</span>
+									</div>
+									<div class="timeline-body">
+										<p>Master of Software Engineering</p>
+									</div>
+								</div>
+							</li>
+
+							<li class="timeline-item timeline-unverted">
+								<div class="timeline-badge">
+									<i class="icon-graduation-cap"></i>
+								</div>
+								<div class="timeline-panel">	
+									<div class="timeline-title">
+										<h3 class="timeline-title">Bachelors  Degree</h3>
+										<span class="company">Zhejiang Gongshang University - 2017.9 - 2011.6</span>
+									</div>
+									<div class="timeline-body">
+										<p>Bachelor of software Engineering</p>
+									</div>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="features">
+			
+		</div>
+
+		<div class="skills">
+			
+		</div>
+
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 text-center">
+						<p>Copyright © 2022 - 2032 Vincent Hu. All Rights Reserved.</p>
+						<p>Design by Vincent Hu</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+
+	</body>
 </html>
+

@@ -1,2 +1,3 @@
 # BabyKnight.github.io
-*.swp
+
+A simple page to display my basic information.
