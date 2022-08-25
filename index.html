@@ -420,11 +420,87 @@
   font-weight: 300;
 }
 
-	.features {
-		height: 0%;
+.project {
 		width: 100%;
-		background: #eeeeee;
+		background: #FF9000;
 	}
+
+	.project .heading {
+		margin-bottom: 5em;
+	}
+
+	.project .heading h2{
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		font-size: 35px !important;;
+  	line-height: 1.5;
+  	color: #000;
+  	text-align: center;
+  	padding: 7px 15px;
+  	letter-spacing: 5px;
+  	font-weight: bold;
+	}
+
+.project .project-padding {
+  padding: 7em 0;
+}
+.project .project-item {
+  margin-bottom: 40px;
+  float: left;
+}
+@media screen and (max-width: 992px) {
+  .project .project-item {
+    margin-bottom: 30px;
+  }
+}
+.project .project-item .project-icon {
+  display: table;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background: #fff;
+  margin-bottom: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+.project .project-item .project-icon i {
+  font-size: 50px;
+  display: table-cell;
+  vertical-align: middle;
+  height: 100px;
+  color: #000 !important;
+}
+.project .project-item .project-info {
+  width: 100%;
+}
+.project .project-item h3 {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: #2c3e50;
+	line-height: 2;
+	letter-spacing: 0.2em;
+}
+.project .project-item p {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  color: #798a9a;
+  letter-spacing: 0.1em;
+	line-height: 1.7;
+  font-weight: 300;
+}
+.project .project-item p:last-child {
+  margin-bottom: 0;
+}
+.project .project-item p a {
+  color: #000 !important;
+}
+
+
+
+
 
 	.skills {
 		height: 0%;
@@ -598,8 +674,187 @@
 			</div>
 		</div>
 
-		<div class="features">
-			
+		<div class="project">
+			<div class="container">
+				<div class="project-padding">
+					<div class="row">
+					<div class="col-md-8 col-md-offset-2 heading">
+						<h2>Project Experience</h2>
+					</div>
+
+					<div class="row">
+						<div class="col-md-4 text center">
+							<div class="project-item">
+								<span class="project-icon">
+									<i class="icon-laptop"></i>
+								</span>
+								<div class="project-info">
+									<h3>Dell Platform Enablement</h3>
+									<p>Enabled new hardware devices (Intel Rocket Lake, Tiger Lake, Alder Laker, Rapter Laker etc.), new features and new OS/version (Ubuntu 18.04, Ubnuntu 18.04 SP1, Ubuntu 20.04, Ubuntu 22.04, Kylin V10, Kylin V10 SP1) on Dell platforms (Inspiron/Vostro NB/DT, Latitude NB)</p>
+									<p>
+										<a href="#">
+											Learn More
+											<i class="icon-share2"></i>
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 text center">
+							<div class="project-item">
+								<span class="project-icon">
+									<i class="icon-tux"></i>
+								</span>
+								<div class="project-info">
+									<h3>Dell Linux Assistant</h3>
+									<p> Design & Develop Linux application 'Dell Linux Assistant' that provides a user-friendly UI to display system information, the link support page for Dell System, register Dell account, send telemetry data, download and build OS recovery media, and BIOS auto-update.</p>
+									<p>
+										<a href="#">
+											Learn More
+											<i class="icon-share2"></i>
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 text center">
+							<div class="project-item">
+								<span class="project-icon">
+									<i class="icon-terminal"></i>
+								</span>
+								<div class="project-info">
+									<h3>LVFS Audit Tool</h3>
+									<p>Design & Develop a tool that can automatically check the BIOS version consistent between Dell Support site and LVFS service.
+									</p>
+									<p>
+										<a href="#">
+											Learn More
+											<i class="icon-share2"></i>
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="row">
+						<div class="col-md-4 text center">
+							<div class="project-item">
+								<span class="project-icon">
+									<i class="icon-sphere"></i>
+								</span>
+								<div class="project-info">
+									<h3>Mintel Web Service</h3>
+									<p>Develop & maintain GNPD/ConsumerDate web service, add new features and improve backend performance.
+									</p>
+									<p>
+										<a href="#">
+											Learn More
+											<i class="icon-share2"></i>
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 text center">
+							<div class="project-item">
+								<span class="project-icon">
+									<i class="icon-cloud"></i>
+								</span>
+								<div class="project-info">
+									<h3>Solr-cloud upgrade for data entry of web service</h3>
+									<p>Upgarde Solr-cloud service for internal web service, Design new mechanism of delta import. Set up new ZooKeeper to manage services.
+									</p>
+									<p>
+										<a href="#">
+											Learn More
+											<i class="icon-share2"></i>
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 text center">
+							<div class="project-item">
+								<span class="project-icon">
+									<i class="icon-file-openoffice"></i>
+								</span>
+								<div class="project-info">
+									<h3>Internal Service for web services (Powerpoint/XLS/Image resizing Service)</h3>
+									<p>Develop variety of formats download for all web services. Support automatically generate download file with specific template.
+									</p>
+									<p>
+										<a href="#">
+											Learn More
+											<i class="icon-share2"></i>
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-4 text center">
+							<div class="project-item">
+								<span class="project-icon">
+									<i class="icon-cogs"></i>
+								</span>
+								<div class="project-info">
+									<h3>VLAN configuration tool</h3>
+									<p>Design & develop tool that can automatically configure VLAN according to configure files and validate the result.
+									</p>
+									<p>
+										<a href="#">
+											Learn More
+											<i class="icon-share2"></i>
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 text center">
+							<div class="project-item">
+								<span class="project-icon">
+									<i class="icon-cog"></i>
+								</span>
+								<div class="project-info">
+									<h3>NLC Calibration Tool for Cisco CMC</h3>
+									<p>Design & develop a windows application for factory production use, Communicate with CMC for the signal configuration. Read signal properties from the Agilent N9030A PXA Signal Analyzer(PXA). Conduct calibration and generate calibrated data for the CMC.
+									</p>
+									<p>
+										<a href="#">
+											Learn More
+											<i class="icon-share2"></i>
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 text center">
+							<div class="project-item">
+
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+
+				
+
+
+				</div>
+				
+			</div>
 		</div>
 
 		<div class="skills">
